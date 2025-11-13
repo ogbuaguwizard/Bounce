@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width = device-width, initial-scale = 1.0, user-scalable = no"> 
+	<title> Ball Run </title>
+	<link rel="stylesheet" href="css/lockorientation.css">
+	<link rel="stylesheet" href="css/style.css">
+  <script src="src/lockorientation.js"></script>
+  <script>
+function lock(){
+      document.querySelector('#land').style.display = "none"; 
+      lockOrientation('portrait');
+  }
+  </script>
+</head>
+<body>
+	<div id="container">
+	  <a href="#" id="land" onclick="lock()">landscape</a>
+		<a href="#" id="pause"></a>
+		<a href="#" id="play"></a>
+		<a href="#" id="reset"></a>
+		<div id="pauseD" class="dialog">
+		    <p>PAUSED</p>
+		    <p><button href="#" id="menu">Menu</button></p>
+		    <p><button href="#" id="restart">Restart</button></p>
+		    <p><button href="#" id="settings">Settings</button></p>
+		    <p><i>OgbuaguWizard ©2022</i></p>
+		</div>
+		<div id="menuD" class="dialog">
+		    <p>MAIN MENU</p>
+		    <p><button href="#" id="start">Start</button></p>
+		    <p><button href="#" id="store">Store</button></p>
+		    <p><button href="#" id="msettings">Settings</button></p>
+		    <p><button href="#" id="credits">Credits</button></p>
+		    <p><i>OgbuaguWizard ©2022</i></p>
+		</div>
+		<canvas id="canvas">
+			 Your browser does not support HTML5 Canvas.
+		</canvas>
+	</div>
+  <script src="src/levels.js"></script>
+  <script src="src/sounds.js"></script>
+  <script src="src/bounce.js"></script>
+	<script src="src/game.js"></script>
+	<script> 
+		//lockOrientation('portrait');
+	</script>
+</body>
+</html>
