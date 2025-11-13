@@ -1,0 +1,88 @@
+
+
+canvas{
+	background-color : grey; 
+}
+canvas :fullscreen { 	
+   width: 100%; 	
+   height: 100%; 	
+   background-color : lightgrey;
+ }
+a{
+    position: absolute;
+    z-index: 200;
+    border: 0;
+    border-radius: 20%;
+}
+#play,#pause,#reset{
+    height:50px;
+    width:50px;
+}
+ #pause{
+    background: rgba(189, 173, 173, 0.4) no-repeat center url(../assets/images/pause.png);
+    background-size: 35px 35px;
+} 
+#play{
+    background: rgba(0, 0, 0, 0.4) no-repeat center url(../assets/images/play.png);
+    background-size: 35px 35px;
+}
+
+#reset{
+    background: rgba(189, 173, 173, 0.4) no-repeat center url(../assets/images/reset.png);
+    background-size: 35px 35px;
+} 
+#play,#pause,#reset{
+    display:none;
+}
+.dialog{
+    display: none;
+    position: absolute;
+    width: 200px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 5%;
+}
+#pauseD>p,#menuD>p{
+    position: relative;
+    margin:3px 0;
+    padding:0 0 4px 0;
+    text-align: center ;
+    font-size:13px;
+    
+}
+p>button{
+    position: relative;
+    text-decoration: none;
+    color: lightgrey;
+    font-size: 22px;
+    border:0; 
+    box-shadow: 0px 0px 7px 1px black;
+    background:#2b3129;
+    width: 90%;
+    
+}
+#start{
+    background: #2b3129 no-repeat  url(../assets/images/play.png);
+    background-size: auto 100%;
+}
+#menu{
+    background: #2b3129 no-repeat  url(../assets/images/menu.png);
+    background-size: auto 100%;
+}
+#msettings,#settings{
+    background: #2b3129 no-repeat  url(../assets/images/settings.png);
+    background-size: auto 100%;
+}
+#credits{
+    background: #2b3129 no-repeat  url(../assets/images/credit.png);
+    background-size: auto 100%;
+}
+#restart{
+    background: #2b3129 no-repeat  url(../assets/images/reset.png);
+    background-size: auto 100%;
+}
+#store{
+    background: #2b3129 no-repeat  url(../assets/images/store.png);
+    background-size: auto 100%;
+}
+
+
